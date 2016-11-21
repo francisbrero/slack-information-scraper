@@ -1,3 +1,13 @@
+# Node modules
+node_modules/
+
+# debug images
+debug/*.png
+
+# data folders
+data/
+output/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

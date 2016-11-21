@@ -1,0 +1,30 @@
+{
+  "name": "francis",
+  "version": "1.0.0",
+  "description": "scrape data from slack",
+  "main": "/lib/scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisbrero/slack-information-scraper.git"
+  },
+  "keywords": [
+    "slack",
+    "scraper"
+  ],
+  "author": "francis@madkudu.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francisbrero/slack-information-scraper/issues"
+  },
+  "homepage": "https://github.com/francisbrero/slack-information-scraper#readme",
+  "engines": {
+    "node": "4.4.7",
+    "npm": "2.15.8"
+  },
+  "dependencies": {
+    "nightmare": "2.8.1"
+  }
+}
