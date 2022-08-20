@@ -7,3 +7,5 @@ debug/*.png
 # data folders
 data/
 output/
+
+.DS_store
