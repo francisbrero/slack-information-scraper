@@ -5,7 +5,8 @@ node_modules/
 debug/*.png
 
 # data folders
-data/
-output/
+data/*
+output/*
 
 .DS_store
+package-lock.json

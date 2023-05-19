@@ -15,30 +15,9 @@ Go [here](https://www.python.org/downloads/)
 npm install
 ```
 
-## log out of the Slack teams you're about to scrape
-
-We're now ready to go!
-
-# Step 1 => configure the scraper
-
-Open lib/scraper.js and: 
-
-## input your email and password to log in
-```
-.type('input[id="email"]', 'EMAIL') 
-.type('input[id="password"]', 'PASSWORD')
-```
-
-## input the slack team you want to scrape
-```
-  .goto('https://SLACK_TEAM.slack.com/team')
-```
-
-Save
-
-# Step 2 => run the scraper
-```
-node lib/scraper.js 
+# Usage
+``` bash
+node ./lib/get_channel_messages.js your_slack_id your_email  your_password your_channel_id
 ```
 
 ### Debug:
