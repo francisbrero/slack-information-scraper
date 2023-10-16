@@ -10,15 +10,27 @@ If you don't that's a shame
 ## ensure you have python 2.7 (at least)
 Go [here](https://www.python.org/downloads/)
 
+You will need 2 folders data and debug
+create them with
+```bash
+mkdir data
+mkdir debug
+```
+
 ## install dependencies for the project
 ```
 npm install
 ```
 
 # Usage
+Configure the `.env` file with your slack team name and your slack email and password
+
+Specify the channel you want to parse
 ``` bash
-node ./lib/get_channel_messages.js your_slack_id your_email  your_password your_channel_id
+node ./lib/get_channel_messages.js channel_id
 ```
+
+ex: `node ./lib/get_channel_messages.js C0284GBS76G`
 
 ### Debug:
 This creates a couple pictures in debug to ensure everything went smoothly
