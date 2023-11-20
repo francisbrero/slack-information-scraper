@@ -23,7 +23,14 @@ npm install
 ```
 
 # Usage
-Configure the `.env` file with your slack team name and your slack email and password
+Configure the `.env` file with your slack team name, your slack email and password
+It should look something like this:
+```
+SLACK_INSTANCE_NAME=
+SLACK_INSTANCE_ID=
+SLACK_USERNAME=
+SLACK_PASSWORD=
+```
 
 Specify the channel you want to parse
 ``` bash
