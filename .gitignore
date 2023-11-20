@@ -10,3 +10,5 @@ output/*
 
 .DS_store
 package-lock.json
+
+.env
