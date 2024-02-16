@@ -31,7 +31,12 @@ SLACK_INSTANCE_ID=
 SLACK_USERNAME=
 SLACK_PASSWORD=
 ```
-
+# Scraping
+## Get members from the slack instance
+``` bash
+node ./lib/get_members.js C0284GBS76G
+```
+## Get messages from channel
 Specify the channel you want to parse
 ``` bash
 node ./lib/get_channel_messages.js channel_id
