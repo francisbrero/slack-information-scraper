@@ -1,8 +1,8 @@
 {
   "name": "francis",
-  "version": "1.0.0",
+  "version": "24.2.17",
   "description": "scrape data from slack",
-  "main": "/lib/scraper.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +12,9 @@
   },
   "keywords": [
     "slack",
-    "scraper"
+    "scraper",
+    "puppeteer",
+    "browser automation"
   ],
   "author": "francis@madkudu.com",
   "license": "ISC",
