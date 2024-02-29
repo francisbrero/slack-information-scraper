@@ -37,14 +37,28 @@ The scraper outputs a raw html in ./data called with today's date which contains
 
 
 # Step 3 => parse the html to get a clean csv
+## start a virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
-python lib/message_html_parse.py 
+## install the requirements
+```bash
+pip install -r requirements.txt
+```
+## run the parser
+```bash
+python lib/messages_html_parse.py
 ```
 
 this outputs a csv file '/output/slack_scrape.csv' text qualified.
 
 Enjoy!
 
+## Deactivate the virtual environment
+```bash
+deactivate
+```
 
 # Comments/feedback 
 are welcome!
