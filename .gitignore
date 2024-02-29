@@ -11,4 +11,8 @@ output/*
 .DS_store
 package-lock.json
 
+# env file
 .env
+
+# venv
+venv/
