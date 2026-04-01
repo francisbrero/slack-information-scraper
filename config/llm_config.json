@@ -1,0 +1,16 @@
+{
+    "models": {
+      "openai_gpt4": {
+        "api_key": "your-openai-api-key",
+        "embedding_model": "text-embedding-ada-002",
+        "summarization_model": "gpt-4"
+      },
+      "local_gpt4o": {
+        "api_key": "your-local-llm-key",
+        "embedding_model": "local-embedding-model",
+        "summarization_model": "local-gpt4o"
+      }
+    },
+    "default_model": "openai_gpt4"
+  }
+  

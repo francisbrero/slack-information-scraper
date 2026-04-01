@@ -1,78 +1,39 @@
-# slack-information-scraper
+# Slack Summary Agent
 
-Get messages from a slack channel and parse them into a csv file
+## Installation & Running
 
-## Initialization
+### Install dependencies
 
-### install dependencies for the project
-
-```
+```bash
 npm install
 ```
 
-## Usage
+### Create configuration files
 
-Configure the `.env` file with your slack team name, your slack email and password
-It should look something like this:
+config/cookies.json: Add your Slack session cookies.
+config/channels.json: List of channel names or IDs.
+config/topics.json: List of key topics for filtering.
 
-```
-SLACK_INSTANCE_NAME=
-SLACK_INSTANCE_ID=
-SLACK_USERNAME=
-SLACK_PASSWORD=
-```
-
-## Scraping
-
-### Get messages from channel
-
-Specify the channel you want to parse
-
-``` bash
-node ./lib/get_channel_messages.js channel_id
-```
-
-ex: `node ./lib/get_channel_messages.js C0284GBS76G`
-
-### Debug
-
-This creates a couple screenshots in debug to ensure everything went smoothly
-
-### Output
-
-The scraper outputs a raw html in ./data called with today's date which contains all the goodness you're looking for.
-
-## Step 3 => parse the html to get a clean csv
-
-### start a virtual environment
+### Run the main pipeline
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+node main.js
 ```
 
-### install the requirements
+- Run the daily pipeline with default settings:
 
 ```bash
-pip install -r requirements.txt
+npm start
 ```
 
-### run the parser
+- Run in debug mode:
 
 ```bash
-python lib/messages_html_parse.py
+npm run debug
 ```
 
-this outputs a csv file '/output/slack_scrape.csv' text qualified.
-
-Enjoy!
-
-### Deactivate the virtual environment
+- Run with a specific model:
 
 ```bash
-deactivate
+node main.js --model local_gpt4o
 ```
-
-## Comments/feedback
-
-are welcome!
